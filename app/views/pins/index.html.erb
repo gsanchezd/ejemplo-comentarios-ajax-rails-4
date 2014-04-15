@@ -1,0 +1,20 @@
+<%= form_tag("", method: "get", remote:true) do %>
+  <%= label_tag(:q, "campo de busqueda") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Buscar") %>
+<% end %>
+
+
+<div id="resultados">
+  <% @pins.each do |pin| %>
+    <%= render pin %>
+  <% end %>
+</div>
+
+<%= link_to 'New Pin', new_pin_path %>
+
+<script type="text/javascript">
+  $("#titulo").click(function() {
+    $( "#titulo").append(a)
+  });
+</script>

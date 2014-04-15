@@ -1,0 +1,5 @@
+<%= pin.name %>
+<%= image_tag(pin.photo, :size => "300x300") %>
+<%= link_to 'Show', pin %>
+<%= link_to 'Edit', edit_pin_path(pin) %>
+<%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>

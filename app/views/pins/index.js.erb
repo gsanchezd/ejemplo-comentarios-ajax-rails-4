@@ -1,0 +1,4 @@
+$('#resultados').html("")
+<% @pins.each do |pin| %>
+	$('#resultados').append("<%= escape_javascript(render pin) %>")
+<% end %>
